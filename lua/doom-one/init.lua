@@ -1007,12 +1007,16 @@ doom_one.load_colorscheme = function()
 
     -- Neovim Terminal Colors {{{
 
+    -- emmanuel: for some reason blue looks horrible in neovide
+    vim.g.terminal_color_4 = '#468dbf' --  blue
+
     if configuration.terminal_colors then
 	    vim.g.terminal_color_0 = bg
 	    vim.g.terminal_color_1 = red
 	    vim.g.terminal_color_2 = green
 	    vim.g.terminal_color_3 = yellow
-	    vim.g.terminal_color_4 = blue
+	    -- emmanuel: for some reason blue looks horrible in neovide
+	    vim.g.terminal_color_4 = '#468dbf' --  blue
 	    vim.g.terminal_color_5 = violet
 	    vim.g.terminal_color_6 = cyan
 	    vim.g.terminal_color_7 = fg
