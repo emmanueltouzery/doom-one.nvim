@@ -885,7 +885,7 @@ doom_one.load_colorscheme = function()
 	    MoreMsgUnderline = { guisp = blue, gui = 'underline' },
 	    MsgUnderline = { guisp = green, gui = 'underline' },
     }
-    if configuration.diagnostics_color_text then 
+    if configuration.diagnostics_color_text then
 	    msg_underline = {
 		    ErrorMsgUnderline = { fg = red, gui = 'underline' },
 		    WarningMsgUnderline = { fg = yellow, gui = 'underline' },
@@ -965,6 +965,7 @@ doom_one.load_colorscheme = function()
 	    high_link('TSComment', 'Comment')
 	    high_link('TSConstructor', 'Structure')
 	    high_link('TSConstant', 'Constant')
+	    high_link('@symbol', 'Constant')
 	    high_link('TSConstBuiltin', 'Constant')
 	    high_link('TSConstMacro', 'Macro')
 	    high_link('TSError', 'Error')
