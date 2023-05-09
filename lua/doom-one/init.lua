@@ -965,7 +965,6 @@ doom_one.load_colorscheme = function()
 	    high_link('TSComment', 'Comment')
 	    high_link('TSConstructor', 'Structure')
 	    high_link('TSConstant', 'Constant')
-	    high_link('@symbol', 'Constant')
 	    high_link('TSConstBuiltin', 'Constant')
 	    high_link('TSConstMacro', 'Macro')
 	    high_link('TSError', 'Error')
@@ -1002,6 +1001,10 @@ doom_one.load_colorscheme = function()
 	    high_link('TSTypeBuiltin', 'TypeBuiltin')
 	    high_link('TSVariable', 'None')
 	    high_link('TSVariableBuiltin', 'VariableBuiltin')
+
+	    -- my additions
+	    high_link('@symbol', 'Constant')
+	    high_link('SpecialChar', 'Operator')
     end
 
     -- }}}
