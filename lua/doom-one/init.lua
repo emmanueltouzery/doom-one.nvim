@@ -95,6 +95,7 @@ local bg_highlighted = '#4A4A45'
 
 local fg = '#bbc2cf'
 local fg_alt = '#5B6268'
+local fg_comment = '#808080'
 local fg_highlight = utils.Lighten(fg, 0.2)
 
 local tag = utils.Mix(blue, cyan, 0.5)
@@ -369,8 +370,12 @@ doom_one.load_colorscheme = function()
 	    URL = { fg = green, gui = 'underline' },
 	    Underlined = { fg = tag, gui = 'underline' },
 
+	    CommentNoItalics = {
+		    fg = fg_comment,
+		    gui = 'NONE',
+	    },
 	    Comment = {
-		    fg = fg_alt,
+		    fg = fg_comment,
 		    gui = configuration.italic_comments and 'italic' or 'NONE',
 	    },
 	    CommentBold = { fg = fg_alt, gui = 'bold' },
@@ -1005,6 +1010,7 @@ doom_one.load_colorscheme = function()
 	    -- my additions
 	    high_link('@symbol', 'Constant')
 	    high_link('SpecialChar', 'Operator')
+	    high_link('@text.literal.block', 'CommentNoItalics')
     end
 
     -- }}}
