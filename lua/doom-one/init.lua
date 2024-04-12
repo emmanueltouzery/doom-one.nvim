@@ -977,6 +977,7 @@ doom_one.load_colorscheme = function()
         high_link('@markup.strong.markdown_inline', 'Bold')
         high_link('@markup.italic.markdown_inline', 'Italic')
         high_link('@markup.link.label.markdown_inline', 'Underlined')
+        high_link('@module', 'Type')
     end
 
     -- Neovim Terminal Colors
