@@ -619,11 +619,14 @@ doom_one.load_colorscheme = function()
     -- Gitsigns
 
     if configuration.plugins_integrations.gitsigns then
+        high_link('GitSignsAdd', 'DiffAddedGutter')
         high_link('GitSignsAddLn', 'DiffAddedGutter')
         high_link('GitSignsAddInline', 'DiffAddedGutter')
         high_link('GitSignsAddLnInline', 'DiffAddedGutter')
+        high_link('GitSignsChange', 'DiffModifiedGutter')
         high_link('GitSignsChangeLn', 'DiffModifiedGutter')
         high_link('GitSignsDeleteInline', 'DiffRemovedGutter')
+        high_link('GitSignsDelete', 'DiffRemovedGutter')
         high_link('GitSignsDeleteLn', 'DiffRemovedGutter')
         high_link('GitSignsChangeDelete', 'DiffModifiedGutter')
     end
@@ -978,6 +981,7 @@ doom_one.load_colorscheme = function()
         high_link('@markup.italic.markdown_inline', 'Italic')
         high_link('@markup.link.label.markdown_inline', 'Underlined')
         high_link('@module', 'Type')
+        high_link('@variable', 'Identifier')
     end
 
     -- Neovim Terminal Colors
