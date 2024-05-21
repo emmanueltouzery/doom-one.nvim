@@ -458,6 +458,9 @@ doom_one.load_colorscheme = function()
         DiffAddedGutterLineNr = { fg = grey },
         DiffModifiedGutterLineNr = { fg = grey },
         DiffRemovedGutterLineNr = { fg = grey },
+
+        DiffviewFilePanelRootPath = { fg = yellow, gui = 'bold' },
+        DiffviewFilePanelTitle = { fg = yellow, gui = 'bold' },
     }
 
     high_clear('DiffAdd')
@@ -982,6 +985,7 @@ doom_one.load_colorscheme = function()
         high_link('@markup.link.label.markdown_inline', 'Underlined')
         high_link('@module', 'Type')
         high_link('@variable', 'Identifier')
+        high_link('WinSeparator', 'VertSplit')
     end
 
     -- Neovim Terminal Colors
