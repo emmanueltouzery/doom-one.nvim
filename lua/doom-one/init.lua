@@ -259,6 +259,8 @@ doom_one.load_colorscheme = function()
         Separator = { fg = fg_alt },
         VertSplit = { fg = grey, bg = bg },
 
+        SpellBad = { gui = 'undercurl', guisp = red, },
+
         TabLine = {
             fg = base7,
             bg = bg_alt,
