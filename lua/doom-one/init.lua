@@ -673,6 +673,9 @@ doom_one.load_colorscheme = function()
             NeogitStashes = { fg = blue, gui = 'bold' },
             NeogitUnstagedChanges = { fg = blue, gui = 'bold' },
             NeogitUntrackedfiles = { fg = blue, gui = 'bold' },
+            NeogitRemote = { fg = magenta, gui = 'bold' },
+            NeogitBranch = { fg = blue, gui = 'bold' },
+            NeogitChangeModified = { fg = violet, gui = 'bold' },
         }
 
         apply_highlight(neogit)
