@@ -694,6 +694,9 @@ doom_one.load_colorscheme = function()
             NvimTreeOpenedFile = { fg = fg_alt },
             NvimTreeSpecialFile = { fg = fg, gui = 'underline' },
             NvimTreeMarkdownFile = { fg = fg, gui = 'underline' },
+            NvimTreeNormal = { bg = bg },
+            NvimTreeNormalFloat = { bg = bg },
+            NvimTreeEndOfBuffer = { fg = bg, bg = bg },
         }
 
         apply_highlight(nvim_tree)
