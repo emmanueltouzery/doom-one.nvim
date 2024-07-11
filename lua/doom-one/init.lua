@@ -994,8 +994,6 @@ doom_one.load_colorscheme = function()
         high_link('@module', 'Type')
         high_link('@variable', 'Identifier')
         high_link('WinSeparator', 'VertSplit')
-
-        vim.cmd [[hi TODO guibg=#ECBE7B guifg=black]]
     end
 
     -- Neovim Terminal Colors
