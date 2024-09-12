@@ -446,7 +446,7 @@ doom_one.load_colorscheme = function()
 
         DiffAdd = { bg = diff_add_bg1 },
         DiffChange = { bg = diff_add_bg1 },
-        DiffText = { bg = diff_add_bg0 },
+        DiffText = { bg = '#2e3c39', fg = '#aad472' },
         DiffDelete = { bg = gh_danger_bg0 },
 
         DiffAdded = { fg = diff_add_fg0, bg = diff_add_bg1 },
